@@ -30,7 +30,7 @@ class ProductResponce(BaseModel):
     category: CategoryResponce = Field(..., description="Product category details")
 
     class Config:
-        form_attributes = True
+        from_attributes = True
 
 class ProductListResponce(BaseModel):
     products: list[ProductResponce]
